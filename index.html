@@ -3,48 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- SEO标题、关键词、描述，方便百度收录 -->
 <title>淘股吧 【股海无名小二】 9:25竞价定格技术研究｜竞价公式与周期逻辑学习交流</title>
 <meta name="keywords" content="9点25竞价定格,集合竞价技术,通达信竞价公式,周期行业逻辑复盘,竞价量价研究">
 <meta name="description" content="专注9:25竞价定格数据技术研究，分享竞价筛选框架、通达信公式学习、养殖周期行业逻辑复盘。所有内容仅作技术回测学习，不荐股，不提供任何交易建议。">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:"Microsoft Yahei",sans-serif;}
-body{max-width:780px;margin:45px auto;padding:0 20px;color:#222;line-height:1.8;font-size:16px;}
-h1{text-align:center;margin-bottom:32px;font-size:24px;}
-.card{background:#f6f7f8;padding:26px;border-radius:12px;margin:24px 0;}
-.title-line{font-weight:bold;font-size:18px;margin-bottom:12px;}
-.tip{margin:16px 0;}
-/* 新增二维码样式 */
-.qrcode-wrap{margin-top:22px;text-align:center;}
-.qrcode-wrap img{width:220px;height:auto;display:block;margin:0 auto;}
-.qrcode-text{font-size:14px;color:#555;margin-top:8px;}
-.warning{margin-top:36px;padding-top:24px;border-top:1px solid #dddddd;color:#990000;font-size:14px;}
+body{
+    max-width:960px;
+    height:100vh;
+    margin:0 auto;
+    padding:24px 30px;
+    color:#222;
+    line-height:1.55;
+    font-size:15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+h1{
+    text-align:center;
+    margin-bottom:14px;
+    font-size:22px;
+}
+.container-row{
+    display:grid;
+    grid-template-columns: 1fr 360px;
+    gap:24px;
+    align-items:center;
+}
+.text-column{}
+.card{
+    background:#f6f7f8;
+    padding:16px 20px;
+    border-radius:12px;
+    margin-bottom:10px;
+}
+.title-line{
+    font-weight:bold;
+    font-size:17px;
+    margin-bottom:6px;
+}
+.tip{
+    margin:6px 0;
+}
+/* 右侧星球卡片 视觉重点 */
+.qrcode-wrap{
+    text-align:center;
+    background:#fff;
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+.qrcode-wrap img{
+    width:100%;
+    height:auto;
+    border-radius:6px;
+}
+.qrcode-text{
+    font-size:14px;
+    color:#333;
+    margin-top:6px;
+    font-weight:500;
+}
+.warning{
+    margin-top:14px;
+    padding-top:12px;
+    border-top:1px solid #dddddd;
+    color:#aa0000;
+    font-size:13px;
+    line-height:1.5;
+}
+
+/* 手机自动切换上下排版 */
+@media screen and (max-width:840px){
+    .container-row{
+        grid-template-columns:1fr;
+    }
+    body{
+        height:auto;
+        padding:16px;
+    }
+}
 </style>
 </head>
 <body>
 <h1>淘股吧 【股海无名小二】 9:25竞价定格技术研究</h1>
-<div class="card">
-    <div class="title-line>研究方向</div>
-    <p class="tip">长期研究早盘9:15–9:25集合竞价量价博弈逻辑，搭建基于9:25定格数据的标准化筛选框架。</p>
-    <p class="tip">研究内容包含竞价底层量价理论、同花顺、通达信条件选股公式编写调试、市场情绪框架、行业周期逻辑复盘。</p>
-</div>
-<div class="card">
-    <div class="title-line">学习资料渠道</div>
-    <p>全套战法思路、公式源码教学、持续复盘笔记，统一放置于知识星球：<strong>竞价技术研究社</strong></p>
-    <p class="tip">星球仅提供技术学习素材，不会每日筛选标的、不点评个股、不指导任何买卖操作。</p>
-    <!-- 二维码区域，在本段卡片内部 -->
+
+<div class="container-row">
+    <div class="text-column">
+        <div class="card">
+            <div class="title-line">研究方向</div>
+            <p class="tip">长期研究早盘9:15–9:25集合竞价量价博弈逻辑，搭建基于9:25定格数据的标准化筛选框架。</p>
+            <p class="tip">研究内容包含竞价底层量价理论、同花顺、通达信条件选股公式编写调试、市场情绪框架、行业周期逻辑复盘。</p>
+        </div>
+
+        <div class="card">
+            <div class="title-line">学习资料渠道</div>
+            <p>全套战法思路、公式源码教学、持续复盘笔记，统一放置于知识星球：<strong>竞价技术研究室</strong></p>
+            <p class="tip">星球仅提供技术学习素材，不会每日筛选标的、不点评个股、不指导任何买卖操作。</p>
+        </div>
+
+        <div class="card">
+            <div class="title-line">交流说明</div>
+            <p>所有素材定位为历史行情回测、交易框架学习工具。</p>
+            <p>程序化筛选仅作为研究参考，不存在适用于所有行情的万能模型，不可直接作为交易依据。</p>
+        </div>
+    </div>
+
+    <!-- 右侧图片，电脑端重点突出 -->
     <div class="qrcode-wrap">
-        <img src="./qrcode.png" alt="知识星球 竞价技术研究社">
-        <div class="qrcode-text">扫码进入知识星球学习</div>
+        <img src="./qrcode.png" alt="知识星球｜竞价技术研究室">
+        <div class="qrcode-text">微信扫码，进入知识星球学习</div>
     </div>
 </div>
-<div class="card">
-    <div class="title-line">交流说明</div>
-    <p>所有素材定位为历史行情回测、交易框架学习工具。</p>
-    <p>程序化筛选仅作为研究参考，不存在适用于所有行情的万能模型，不可直接作为交易依据。</p>
-</div>
+
 <div class="warning">
 【风险声明】本人无证券投资咨询执业资质。本站全部内容仅用于技术思路学习与历史数据复盘研究，不构成任何投资建议。市场波动风险极高，请独立思考、自主决策，一切交易盈亏自行承担。
 </div>
+
 </body>
 </html>
