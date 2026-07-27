@@ -14,29 +14,35 @@ h1{text-align:center;margin-bottom:32px;font-size:24px;}
 .card{background:#f6f7f8;padding:26px;border-radius:12px;margin:24px 0;}
 .title-line{font-weight:bold;font-size:18px;margin-bottom:12px;}
 .tip{margin:16px 0;}
+/* 新增二维码样式 */
+.qrcode-wrap{margin-top:22px;text-align:center;}
+.qrcode-wrap img{width:220px;height:auto;display:block;margin:0 auto;}
+.qrcode-text{font-size:14px;color:#555;margin-top:8px;}
 .warning{margin-top:36px;padding-top:24px;border-top:1px solid #dddddd;color:#990000;font-size:14px;}
 </style>
 </head>
 <body>
 <h1>淘股吧 【股海无名小二】 9:25竞价定格技术研究</h1>
 <div class="card">
-    <div class="title-line">研究方向</div>
+    <div class="title-line>研究方向</div>
     <p class="tip">长期研究早盘9:15–9:25集合竞价量价博弈逻辑，搭建基于9:25定格数据的标准化筛选框架。</p>
     <p class="tip">研究内容包含竞价底层量价理论、同花顺、通达信条件选股公式编写调试、市场情绪框架、行业周期逻辑复盘。</p>
 </div>
-
 <div class="card">
     <div class="title-line">学习资料渠道</div>
     <p>全套战法思路、公式源码教学、持续复盘笔记，统一放置于知识星球：<strong>竞价技术研究社</strong></p>
     <p class="tip">星球仅提供技术学习素材，不会每日筛选标的、不点评个股、不指导任何买卖操作。</p>
+    <!-- 二维码区域，在本段卡片内部 -->
+    <div class="qrcode-wrap">
+        <img src="./qrcode.png" alt="知识星球 竞价技术研究社">
+        <div class="qrcode-text">扫码进入知识星球学习</div>
+    </div>
 </div>
-
 <div class="card">
     <div class="title-line">交流说明</div>
     <p>所有素材定位为历史行情回测、交易框架学习工具。</p>
     <p>程序化筛选仅作为研究参考，不存在适用于所有行情的万能模型，不可直接作为交易依据。</p>
 </div>
-
 <div class="warning">
 【风险声明】本人无证券投资咨询执业资质。本站全部内容仅用于技术思路学习与历史数据复盘研究，不构成任何投资建议。市场波动风险极高，请独立思考、自主决策，一切交易盈亏自行承担。
 </div>
